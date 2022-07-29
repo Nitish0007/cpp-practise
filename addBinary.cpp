@@ -16,7 +16,7 @@ string addBinary(string a, string b)
     }
     b = padding + b;
     cout << a << " " << b << endl;
-    for (int i = a.length(); i > 0; --i)
+    for (int i = a.length() - 1; i >= 0; --i)
     {
         cout << i << endl;
         if (a[i] == '1' && b[i] == '1')
