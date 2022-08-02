@@ -64,5 +64,7 @@ int main(){
     }
     cout<<"total Occurences of "<<k<<" is: "<<(lastIndex - firstIndex + 1)<<endl;
 
+    delete []arr
+
     return 0;
 }

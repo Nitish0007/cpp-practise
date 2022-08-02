@@ -62,7 +62,7 @@ int main()
     cout<<"first Occurence is at index: "<<fistIndex<<endl;
     int lastIndex = lastOccurence(arr, 0 , n - 1, k, -1);
     cout<<"last Occurence is at index: "<<lastIndex<<endl;
-
+    delete []arr;
 
     return 0;
 }
