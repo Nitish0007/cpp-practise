@@ -16,7 +16,7 @@ int main(){
     int *arr = new int[n];
     for(int i = 0; i < n; ++i){
         int elem;
-        cin >>elem;
+        cin >> elem;
         arr[i] = elem;
     }
 
