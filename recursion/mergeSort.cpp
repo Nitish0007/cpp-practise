@@ -3,6 +3,7 @@
  using namespace std;
 
  void merge(int *arr, int s, int e){
+    // cout<<"inside merge function line number 6 "<<s<<" "<<e<<endl;
     int mid = s + (e - s)/2;
     int l1 = mid - s + 1;
     int l2 = e - mid;
@@ -44,7 +45,7 @@
  }
 
  void mergeSort(int *arr,int s, int e){
-    // cout<<s<<" "<<e<<endl;
+    // cout<<"print array in mergeSort : "<<endl;
     if(s>=e) return;
 
     int mid = s + (e-s)/2;
@@ -52,14 +53,12 @@
     mergeSort(arr, s, mid);
     mergeSort(arr, mid + 1, e);
     merge(arr, s, e);
-    // cout<<"line 61"<<endl;
  }
 
  int main(){
 
  int n;
     cout << "enter size of array : " << endl;
-    // array must be sorted and rotated
     cin >> n;
     int *arr = new int[n];
     for (int i = 0; i < n; ++i)

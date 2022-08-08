@@ -2,19 +2,9 @@
 
 using namespace std;
 
-void insertionSort(int* arr, int i, int n){
-  if(n == 0 || n == 1 || i == n)return;
+void mergeSort(int* arr, int size){
 
-  int curr = arr[i];
-  int j = 0;
-
-  while(j < i){
-    if(arr[j] > curr){
-        swap(arr[j], arr[i]);
-    }
-    j++;
-  }
-  insertionSort(arr, i+1, n);
+    
 }
 
 int main(){
@@ -29,13 +19,12 @@ int main(){
         arr[i] = elem;
     }
 
-    insertionSort(arr,1, n);
+    mergeSort(arr,n);
 
     for(int i = 0; i < n; ++i){
         cout<<arr[i]<<' ';
     }
     cout<<endl;
-
 
     return 0;
 }
